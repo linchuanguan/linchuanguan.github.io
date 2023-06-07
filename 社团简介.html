@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            color: #444;
+            line-height: 1.9;
+            background-color: #f3f3f3;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .wrapper {
+            margin: auto;
+            width: 110rem;
+            /* background-color: #ccc; */
+        }
+
+        .section {
+            padding: 15rem 3rem;
+            border-top: 1px solid #ddd;
+
+            transition: transform 1s, opacity 1s;
+        }
+
+        .header {
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        /* header */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 9rem;
+            width: 100%;
+            padding: 0 6rem;
+            z-index: 100;
+            /* position: fixed; */
+            /* background-color: #333; */
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .nav .links {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex: .6;
+        }
+
+        .nav .logo i {
+            color: #dedede;
+            font-size: 5.5rem;
+            font-weight: 400;
+            margin-left: 8rem;
+        }
+
+
+        .link_li {
+            margin-left: 4rem;
+            background-color: rgb(251, 89, 89);
+            box-shadow: 5px 5px 0 #333;
+            width: 10rem;
+            height: 4rem;
+            border-radius: 6px;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+
+        .link_li:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 4rem;
+        }
+
+        .iconfont {
+            color: #000000;
+            font-weight: 700;
+            z-index: 1;
+        }
+
+        .section {
+            padding: 48px 24px;
+            overflow: hidden;
+            border-top: 2px solid#333;
+            /* background-color: #cfe8ff; */
+            display: flex;
+            justify-content: space-between;
+            /* align-items: flex-start; */
+            flex-direction: column;
+            gap: 46px;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.8rem;
+        }
+
+        h4 {
+            font-size: 1.6rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+
+        .img {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 40%;
+            height: 40%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+
+            <a href="" class="logo">
+                <i class="iconfont icon-tiyu-wangqiu
+                ">HPI</i>
+            </a>
+            <div class="logo_box"></div>
+
+            <!-- <div class="next logo">
+                <i class="iconfont icon-tiyu-wangqiu
+                ">HPI</i>
+            </div> -->
+            <ul class="links">
+                <li class="link_li">
+                    <a href="./首页.html" class="link">返回首页</a>
+                </li>
+                <li class="link_li">
+                    <a href="./社团简介.html" class="link">关于社团</a>
+                </li>
+                <li class="link_li">
+                    <a href="./了解网球.html" class="link">了解网球</a>
+                </li>
+                <li class="link_li">
+                    <a href="./留言板.html" class="link">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="section">
+            <h2>社团简介</h2>
+            <h4>社团名称:HPI网球社</h4>
+            <h4>创办时间:2017.11.11</h4>
+            <p>创办理念：社团是大学校园文化建设的生力军，具有促进校园文化的功能。本社以丰
+                富学生课余生活，
+                推广网球，
+                提高个人各方面素质以及促进学校文化建设的主旨创办此社，
+                让学生在学习压力下放松自己的心情，以好的心情来对待学习，对待生活。</p>
+            <p>网球社团内容：主要教学内容包括握拍方法，准备姿势及移动步伐，发球，接发球，
+                抽击球，截击球，高压球与挑高球，放短球与反弹球，双打基本技术，基本战术培养。
+                活动安排：每周两次社团活动。
+                入社要求：有积极向上的学习心态，集体荣誉感，喜爱网球。</p>
+            <p>活动安排：每周两次社团活动。</p>
+            <p>入社要求：有积极向上的学习心态，集体荣誉感，喜爱网球。</p>
+            <p>1 、社团是一个舞台，并且还是一个台阶不高的舞台，只要你有
+                表演的欲望，不管你具体的水平怎么样，你都可以尽情的展现自己。</p>
+            <p>2、参加社团最大的好处就是，可以结交到很多志同道合的朋友。</p>
+            <p>3 、
+                网球是项有氧和无氧交替的运动，
+                所以网球可以最大限度的使希望锻炼身体的人得
+                到不同层面的满足，实验证明，开始打网球后
+                2
+                个月，体重都有大幅度的降低，然后会缓
+                慢减磅，直到均衡，所以网球是最不费力的减肥方式。</p>
+            <h4>名师指导:张老师</h4>
+            <div class="img"><img src="./images/zhang1.jpg" alt="">
+                <img src="./images/zhang2.jpg" alt="">
+            </div>
+
+
+
+            <div class="box">
+                <h4>联系我们: </h4>
+                <p>15094495108</p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
