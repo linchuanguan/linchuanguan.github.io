@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HPI_注册</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <!-- <link rel="stylesheet" href="./css/common.css"> -->
+  <link rel="stylesheet" href="./css/register.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css">
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+
+<body>
+  <!-- 登录头部 -->
+  <div class="hpi-login-header">
+    <a class="home" href="./首页.html">进入网站首页</a>
+  </div>
+  <!-- 登录内容 -->
+
+
+  <div class="hpi-wrapper">
+    <div class="container">
+      <!-- 卡片 -->
+      <div class="hpi-card">
+        <h3>新用户注册</h3>
+        <form class="hpi-form">
+          <div data-prop="username" class="hpi-form-item">
+            <span class="iconfont icon-a-wangqiuchangguan
+            "></span>
+            <input name="username" type="text" placeholder="设置用户名称">
+            <span class="msg"></span>
+          </div>
+
+
+          <div data-prop="phone" class="hpi-form-item">
+            <span class="iconfont icon-a-wangqiuchangguan
+            "></span>
+            <input name="phone" type="text" placeholder="输入手机号码  ">
+            <span class="msg"></span>
+          </div>
+
+
+          <div data-prop="code" class="hpi-form-item">
+            <span class="iconfont icon-a-wangqiuchangguan
+            "></span>
+            <input name="code" type="text" placeholder="短信验证码">
+            <span class="msg"></span>
+            <a class="code" href="javascript:;">发送验证码</a>
+          </div>
+
+
+          <div data-prop="password" class="hpi-form-item">
+            <span class="iconfont icon-a-wangqiuchangguan
+            "></span>
+            <input name="password" type="password" placeholder="设置6至20位字母、数字和符号组合">
+            <span class="msg"></span>
+          </div>
+          <div data-prop="confirm" class="hpi-form-item">
+            <span class="iconfont icon-a-wangqiuchangguan
+"></span>
+            <input name="confirm" type="password" placeholder="请再次输入上面密码">
+            <span class="msg"></span>
+          </div>
+          <div class="hpi-form-item pl50">
+            <i class="iconfont icon-queren"></i>
+            已阅读并同意<i>《用户服务协议》</i>
+          </div>
+          <div class="hpi-form-item">
+            <button class="submit">下一步</button>
+            <!-- <a class="submit" href="javascript:;">下一步</a> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const bt = document.querySelector('.submit')
+    bt.addEventListener('submit', function () {
+      location.href = './login.html'
+    })
+
+    //验证码code
+    const code = document.querySelector('.code')
+    let flag = true
+    code.addEventListener('click', function () {
+      if (flag) {
+        flag = false
+        let i = 5
+        code.innerHTML = `${i}秒后重新获取`
+        let timerId = setInterval(function () {
+          i--
+          code.innerHTML = `${i}秒后重新获取`
+          if (i === 0) {
+            clearInterval(timerId)
+            code.innerHTML = `重新获取`
+            flag = true
+          }
+        }, 1000)
+
+      }
+    })
+    //验证用户名
+    const username = document.querySelector('[name = username]')
+    username.addEventListener('change', verifyName)
+    function verifyName() {
+      const span = username.nextElementSibling
+      const reg = /^[a-zA-Z0-9_-]{6,10}$/
+      if (!reg.test(username.value)) {
+        console.log('cxsr');
+        span.innerHTML = "输入不合法,请输入6-10位"
+        return false
+      }
+      else {
+        span.innerHTML = ""
+        return true
+      }
+    }
+
+
+    //验证手机号
+    const phone = document.querySelector('[name = phone]')
+    phone.addEventListener('change', verifyPhone)
+    function verifyPhone() {
+      const span = phone.nextElementSibling
+      const reg = /^1(3\d|4[5-9]|5[0-35-9]|6[567]|7[0-8]|8\d|9[0-35-9])\d{8}$/
+      if (!reg.test(phone.value)) {
+        console.log('cxsr');
+        span.innerHTML = "输入不合法,请输入正确的11位手机号码"
+        return false
+      }
+      else {
+        span.innerHTML = ""
+        return true
+      }
+    }
+
+
+    //验证验证码
+    const codeIput = document.querySelector('[name = code]')
+    codeIput.addEventListener('change', verifyCodeIput)
+    function verifyCodeIput() {
+      const span = codeIput.nextElementSibling
+      const reg = /^\d{6}$/
+      if (!reg.test(codeIput.value)) {
+        console.log('cxsr');
+        span.innerHTML = "输入不合法,请输入正确的6位验证码"
+        return false
+      }
+      else {
+        span.innerHTML = ""
+        return true
+      }
+    }
+
+
+
+    //验证密码
+    const password = document.querySelector('[name = password]')
+    password.addEventListener('change', verifyPsw)
+    function verifyPsw() {
+      const span = password.nextElementSibling
+      const reg = /^[a-zA-Z0-9_-]{6,10}$/
+      if (!reg.test(password.value)) {
+        console.log('cxsr');
+        span.innerHTML = "输入不合法,请输入6-10位密码"
+        return false
+      }
+      else {
+        span.innerHTML = ""
+        return true
+      }
+    }
+
+
+    //验证密码
+    const confirm = document.querySelector('[name = confirm]')
+    confirm.addEventListener('change', verifyConfirm)
+    function verifyConfirm() {
+      const span = confirm.nextElementSibling
+      const reg = /^[a-zA-Z0-9_-]{6,10}$/
+      if (confirm.value != password.value) {
+        console.log('cxsr');
+        span.innerHTML = "输入不合法,密码不一至"
+        return false
+      }
+      else {
+        span.innerHTML = ""
+        return true
+      }
+    }
+
+
+    // // 已阅读切换类
+    // const agree = document.querySelector('.icon-queren')
+    // agree.addEventListener('click', function () {
+    //   this.classList.toggle('icon-queren2')
+    // })
+
+    // //提交模块
+    // const form = document.querySelector('form')
+    // form.addEventListener('click', function (e) {
+    //   //判断是否勾选模块,如果有icon-queren2说明已勾选
+    //   if (!agree.classList.contains('icon-queren2')) {
+    //     alert('请勾选同意协议')
+    //     e.preventDefault()
+    //   }
+
+    // if (!verifyName()) e.preventDefault()
+    // if (!verifyPhone()) e.preventDefault()
+    // if (!verifyCodeIput()) e.preventDefault()
+    // if (!verifyPsw()) e.preventDefault()
+    // if (!verifyConfirm()) e.preventDefault()
+
+
+    // })
+
+
+    // 7. 我同意
+    const queren = document.querySelector('.icon-queren')
+    queren.addEventListener('click', function () {
+      // 切换类  原来有的就删掉，原来没有就添加
+      this.classList.toggle('icon-queren2')
+    })
+
+    // 8. 提交模块
+    const form = document.querySelector('form')
+    form.addEventListener('submit', function (e) {
+      // 判断是否勾选我同意模块 ，如果有 icon-queren2说明就勾选了，否则没勾选
+      if (!queren.classList.contains('icon-queren2')) {
+        alert('请勾选同意协议')
+        // 阻止提交
+        e.preventDefault()
+      }
+      // 依次判断上面的每个框框 是否通过，只要有一个没有通过的就阻止
+      // console.log(verifyName())
+      if (!verifyName()) e.preventDefault()
+      if (!verifyPhone()) e.preventDefault()
+      if (!verifyCodeIput()) e.preventDefault()
+      if (!verifyPsw()) e.preventDefault()
+      if (!verifyConfirm()) e.preventDefault()
+    })
+
+  </script>
+</body>
+
+</html>
