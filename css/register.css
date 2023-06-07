@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+ul,
+h1,
+h3,
+h4,
+p,
+dl,
+dd {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+i {
+  font-style: normal;
+}
+
+input {
+  outline: none;
+  padding: 0;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.wrapper {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.hpi-login-header {
+  width: 1170px;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+
+
+.hpi-login-header .home {
+  float: right;
+  margin-top: 1rem;
+  font-size: 16px;
+  padding-right: 2.4rem;
+  background: url(../images/login-enter.png) no-repeat right;
+
+}
+
+
+
+.hpi-wrapper {
+  background: #f5f5f5;
+  line-height: 1.4;
+}
+
+.hpi-wrapper .container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.hpi-card {
+  width: 100%;
+  height: 800px;
+  background: #fff;
+}
+
+.hpi-card h3 {
+  font-size: 26px;
+  font-weight: normal;
+  color: #999999;
+  padding-left: 50px;
+  height: 180px;
+  line-height: 180px;
+}
+
+.hpi-form {
+  padding-left: 460px;
+}
+
+.hpi-form .hpi-form-item {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.submit:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.hpi-form .hpi-form-item .msg {
+  color: #ff4d4f;
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+}
+
+
+.hpi-form .hpi-form-item.pl50 {
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.hpi-form .hpi-form-item span.iconfont {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  color: #666;
+  font-size: 18px;
+}
+
+.hpi-form .hpi-form-item i {
+  color: #27BA9B;
+  font-size: 14px;
+}
+
+.hpi-form .hpi-form-item input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #e4e4e4;
+  padding-left: 40px;
+}
+
+.hpi-form .hpi-form-item.error input {
+  border-color: #ff4d4f;
+}
+
+.hpi-form .hpi-form-item input::placeholder {
+  color: #ccc !important;
+}
+
+.hpi-form .hpi-form-item .submit {
+  width: 300px;
+  height: 50px;
+  background: #27BA9B;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.hpi-form .hpi-form-item .code {
+  position: absolute;
+  left: 190px;
+  top: 16px;
+  width: 100px;
+  color: #27BA9B;
+  text-align: right;
+}
+
+.hpi-form .hpi-form-item .code.ing {
+  color: #cccccc;
+}
+
+.hpi-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 720px;
+  height: 96px;
+  margin: 0 auto;
+}
+
+.hpi-steps .item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.hpi-steps .item .text {
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 63px;
+  color: #999;
+}
+
+.hpi-steps .item .step {
+  border: 2px solid #e4e4e4;
+  color: #ccc;
+  background: #fff;
+  border-radius: 50%;
+  line-height: 46px;
+  text-align: center;
+  font-size: 28px;
+  z-index: 999;
+  display: block;
+  position: relative;
+}
+
+.hpi-steps .item::after,
+.hpi-steps .item::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 24px;
+  height: 2px;
+  background: #e4e4e4;
+  width: 120px;
+}
+
+.hpi-steps .item::after {
+  transform: translateX(-100%);
+}
+
+.hpi-steps .item:first-child::after {
+  display: none;
+}
+
+.hpi-steps .item:last-child::before {
+  display: none;
+}
+
+.hpi-steps .item.active .text {
+  color: #27BA9B;
+}
+
+.hpi-steps .item.active .step {
+  background: #27BA9B;
+  color: #fff;
+  border-color: #27BA9B;
+}
+
+.hpi-steps .item.active::after,
+.hpi-steps .item.active::before {
+  content: "";
+  background: #27BA9B;
+}
+
+.hpi-form-label {
+  padding-left: 360px;
+  margin-top: 80px;
+}
+
+.hpi-form-label .hpi-form-item {
+  position: relative;
+  padding-bottom: 24px;
+  display: flex;
+}
+
+.hpi-form-label .hpi-form-item label {
+  width: 100px;
+  padding-right: 15px;
+  text-align: right;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  color: #999;
+}
+
+.hpi-form-label .hpi-form-item input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #e4e4e4;
+  padding-left: 10px;
+}
+
+.hpi-form-label .hpi-form-item input::placeholder {
+  color: #cccccc !important;
+}
+
+.hpi-form-label .hpi-form-item input:read-only {
+  background: #f5f5f5;
+  color: #999;
+}
+
+.hpi-form-label .hpi-form-item .submit {
+  width: 300px;
+  height: 50px;
+  background: #27BA9B;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.hpi-form-label .hpi-form-item .captcha {
+  line-height: 50px;
+  height: 50px;
+}
+
+.hpi-form-label .hpi-form-item .captcha img {
+  width: 134px;
+  height: 50px;
+}
+
+.hpi-form-label .hpi-form-item .captcha a {
+  color: #27BA9B;
+}
+
+.hpi-form-label .hpi-form-item .code {
+  position: absolute;
+  left: 310px;
+  top: 16px;
+  color: #27BA9B;
+}
+
+.hpi-form-label .hpi-form-item .code.ing {
+  color: #cccccc;
+}
+
+.hpi-success-box {
+  padding-top: 250px;
+  text-align: center;
+  color: #999999;
+}
+
+.hpi-success-box .iconfont {
+  font-size: 80px;
+  color: #1DC779;
+}
+
+.hpi-success-box .tit {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.hpi-success-box .desc {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.hpi-success-box .btn {
+  width: 300px;
+  height: 50px;
+  background: #27BA9B;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+}

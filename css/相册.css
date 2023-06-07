@@ -1,0 +1,149 @@
+:root {
+    --color-primary: #5ec576;
+    --color-secondary: #ffcb03;
+    --color-tertiary: #ff585f;
+    --color-primary-darker: #4bbb7d;
+    --color-secondary-darker: #ffbb00;
+    --color-tertiary-darker: #fd424b;
+    --color-primary-opacity: #5ec5763a;
+    --color-secondary-opacity: #ffcd0331;
+    --color-tertiary-opacity: #ff58602d;
+    --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+    --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.9;
+    background-color: #f3f3f3;
+}
+
+button:focus {
+    outline: none;
+}
+
+.wrapper {
+    margin: auto;
+    width: 110rem;
+    /* background-color: #ccc; */
+}
+
+.section {
+    padding: 15rem 3rem;
+    border-top: 1px solid #ddd;
+
+    transition: transform 1s, opacity 1s;
+}
+
+.header {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+}
+
+/* header */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    width: 100%;
+    padding: 0 6rem;
+    z-index: 100;
+    /* position: fixed; */
+    /* background-color: #333; */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav .links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex: .6;
+}
+
+.nav .logo i {
+    color: #dedede;
+    font-size: 5.5rem;
+    font-weight: 400;
+    margin-left: 8rem;
+}
+
+
+.link_li {
+    margin-left: 4rem;
+    background-color: rgb(251, 89, 89);
+    box-shadow: 5px 5px 0 #333;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 6px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+
+.link_li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.iconfont {
+    color: #000000;
+    font-weight: 700;
+    z-index: 1;
+}
+
+
+
+
+
+.section-testimonials {
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 20fr 55fr 20fr;
+    align-items: center;
+}
+
+
+
+.gallery {
+    margin-top: 1rem;
+    display: grid;
+    gap: 2rem;
+    padding: 1.6rem;
+}
+
+.gallery-item {
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
