@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        :root {
+            --color-primary: #5ec576;
+            --color-secondary: #ffcb03;
+            --color-tertiary: #ff585f;
+            --color-primary-darker: #4bbb7d;
+            --color-secondary-darker: #ffbb00;
+            --color-tertiary-darker: #fd424b;
+            --color-primary-opacity: #5ec5763a;
+            --color-secondary-opacity: #ffcd0331;
+            --color-tertiary-opacity: #ff58602d;
+            --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+            --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            color: #444;
+            line-height: 1.9;
+            background-color: #f3f3f3;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .wrapper {
+            margin: auto;
+            width: 110rem;
+            /* background-color: #ccc; */
+        }
+
+        .section {
+            padding: 15rem 3rem;
+            border-top: 1px solid #ddd;
+
+            transition: transform 1s, opacity 1s;
+        }
+
+        .header {
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        /* header */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 9rem;
+            width: 100%;
+            padding: 0 6rem;
+            z-index: 100;
+            /* position: fixed; */
+            /* background-color: #333; */
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .nav .links {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex: .6;
+        }
+
+        .nav .logo i {
+            color: #dedede;
+            font-size: 5.5rem;
+            font-weight: 400;
+            margin-left: 8rem;
+        }
+
+
+        .link_li {
+            margin-left: 4rem;
+            background-color: rgb(251, 89, 89);
+            box-shadow: 5px 5px 0 #333;
+            width: 10rem;
+            height: 4rem;
+            border-radius: 6px;
+            /* padding: .2rem 1rem; */
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .link_li:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 4rem;
+        }
+
+        .iconfont {
+            color: #000000;
+            font-weight: 700;
+            z-index: 1;
+        }
+
+        .section {
+            padding: 48px 24px;
+            overflow: hidden;
+            border-top: 2px solid#333;
+            background-color: #cfe8ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 46px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .box {
+            margin-top: 6.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+
+            <a href="#" class="logo">
+                <i class="iconfont icon-tiyu-wangqiu
+            ">HPI</i>
+            </a>
+            <div class="logo_box"></div>
+
+            <!-- <div class="next logo">
+            <i class="iconfont icon-tiyu-wangqiu
+            ">HPI</i>
+        </div> -->
+            <ul class="links">
+                <li class="link_li">
+                    <a href="./首页.html" class="link">返回首页</a>
+                </li>
+                <li class="link_li">
+                    <a href="./社团简介.html" class="link">关于社团</a>
+                </li>
+                <li class="link_li">
+                    <a href="./了解网球.html" class="link">了解网球</a>
+                </li>
+                <li class="link_li">
+                    <a href="./留言板.html" class="link">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="section">
+
+            <h1>网球运动的起源</h1>
+            <p>网球运动的起源及演变可以用四句话来概括:孕育在法国，诞生在英国，开始普及和形成高潮在美国，现盛行全世界。网球运动被称为世界第二大球类运动。网球运动的起源可以追溯到12-
+                -13世纪法国传教士在教堂回廊里用手掌击球的游戏。14世纪中叶，法国的一
+                -位诗人把网球游戏介绍到法国宫廷，作为皇室贵族男女的消遭活动。最初这种游戏在大厅进行，后来移向室外开阔的空地上进行。游戏时，将一条绳子架在中间， 两边各站一人， 双方用手来回击打一种裹着头发的布球。
+                随后，法国王储将这种游戏使用的球赠给英皇亨利五世，于是这种游戏便传入英国。英王颇感兴趣，下令在宫中修建片室内球场。 从此，网球开始在英国流行， 成为英国上层社会的一种娱乐活动，
+                所以有“贵族运动”之雅称。当时球的表面是用埃及坦尼斯镇所产的最为著名的绒布斜纹法 兰绒制作的，英国人将这种球称为"Tennis"
+                (网球的英文名称由此而来)，并流传至今。现在，我们使用的球还保留着一层柔软的绒面。15世纪，用手击球的方法逐渐被板拍击球所代替，板拍和球拍便应运而生。最初，皇家贵族们用一种皮制手套击球，后来，由手套逐渐演变成板拍，板拍又很快被用蒙着羊皮的木制球拍代替。同时，场地中间的绳子，增加无数短绳子向地面垂下，球从绳子下面经过时，可以明显地被发觉。到了17世纪初，场地中间的绳帘改成小方格网子，球拍也改成穿线的球拍。
+
+            </p>
+            <p>网球运动的起源及演变可以用四句话来概括:孕育在法国，诞生在英国，开始普及和形成高潮在美国，现盛行全世界。网球运动被称为世界第二大球类运动。网球运动的起源可以追溯到12-
+                -13世纪法国传教士在教堂回廊里用手掌击球的游戏。14世纪中叶，法国的一
+                -位诗人把网球游戏介绍到法国宫廷，作为皇室贵族男女的消遭活动。最初这种游戏在大厅进行，后来移向室外开阔的空地上进行。游戏时，将一条绳子架在中间， 两边各站一人， 双方用手来回击打一种裹着头发的布球。
+                随后，法国王储将这种游戏使用的球赠给英皇亨利五世，于是这种游戏便传入英国。英王颇感兴趣，下令在宫中修建片室内球场。 从此，网球开始在英国流行， 成为英国上层社会的一种娱乐活动，
+                所以有“贵族运动”之雅称。当时球的表面是用埃及坦尼斯镇所产的最为著名的绒布斜纹法 兰绒制作的，英国人将这种球称为"Tennis"
+                (网球的英文名称由此而来)，并流传至今。现在，我们使用的球还保留着一层柔软的绒面。15世纪，用手击球的方法逐渐被板拍击球所代替，板拍和球拍便应运而生。最初，皇家贵族们用一种皮制手套击球，后来，由手套逐渐演变成板拍，板拍又很快被用蒙着羊皮的木制球拍代替。同时，场地中间的绳子，增加无数短绳子向地面垂下，球从绳子下面经过时，可以明显地被发觉。到了17世纪初，场地中间的绳帘改成小方格网子，球拍也改成穿线的球拍。
+
+            </p>
+            <!-- <img src="./images/qiyuan2.webp" alt="">
+            <img src="./images/qiyuan1.webp" alt=""> -->
+        </div>
+    </section>
+    <div class="section">
+        <div class="box"><img src="./images/qiyuan2.webp" alt=""></div>
+        <img src="./images/qiyuan1.webp" alt="">
+    </div>
+
+    </div>
+
+</body>
+
+</html>
