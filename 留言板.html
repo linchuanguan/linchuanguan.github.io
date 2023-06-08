@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bobo</title>
     <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <!-- <link rel="stylesheet" href="./css/qr.css"> -->
+    <!-- <link rel="stylesheet" href="./css/留言板.css"> -->
     <style>
         /* 导航 */
         * {
@@ -216,6 +218,41 @@
             color: #999;
             font-size: 12px;
         }
+
+
+
+        /* below 540px */
+
+        @media(max-width:33em) {
+
+            html {
+                font-size: 40%;
+            }
+
+            .wrapper {
+                margin: auto;
+                width: 60rem;
+                /* background-color: #ccc; */
+            }
+
+            .nav {
+                margin-bottom: 10rem;
+                justify-content: space-around;
+            }
+
+            .nav .logo i {
+                font-size: 4rem;
+                margin-left: -3rem;
+                flex: .3;
+            }
+
+            .nav {
+                height: 8rem;
+                width: 100%;
+                padding: 0 1rem;
+            }
+
+        }
     </style>
 </head>
 
@@ -234,7 +271,7 @@
         </div> -->
         <ul class="links">
             <li class="link_li">
-                <a href="./首页.html" class="link">返回首页</a>
+                <a href="./index.html" class="link">返回首页</a>
             </li>
             <li class="link_li">
                 <a href="./社团简介.html" class="link">关于社团</a>
@@ -242,9 +279,9 @@
             <li class="link_li">
                 <a href="./了解网球.html" class="link">了解网球</a>
             </li>
-            <li class="link_li">
+            <!-- <li class="link_li">
                 <a href="./留言板.html" class="link">留言板</a>
-            </li>
+            </li> -->
         </ul>
     </div>
     </header>
