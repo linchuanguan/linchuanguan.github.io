@@ -541,8 +541,8 @@
     .features {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        margin-left: -2em;
+        gap: 3rem;
+        margin-left: -1em;
     }
 
     .pic {
