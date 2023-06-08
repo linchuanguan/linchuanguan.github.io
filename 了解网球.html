@@ -28,6 +28,7 @@
             box-sizing: inherit;
         }
 
+
         html {
             font-size: 62.5%;
             box-sizing: border-box;
@@ -131,13 +132,57 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            gap: 46px;
+            gap: 4.6rem;
             margin: auto;
             width: 100%;
         }
 
         .box {
             margin-top: 6.5rem;
+        }
+
+        @media(max-width:33em) {
+
+            html {
+                font-size: 40%;
+            }
+
+            .wrapper {
+                margin: auto;
+                width: 30rem;
+                /* background-color: #ccc; */
+            }
+
+            .nav {
+                /* margin-bottom: 10rem; */
+                justify-content: space-around;
+            }
+
+            .nav .logo i {
+                font-size: 4rem;
+                margin-left: -3rem;
+                flex: .3;
+            }
+
+            .nav {
+                height: 8rem;
+                width: 100%;
+                padding: 0 1rem;
+            }
+
+
+            .section {
+                padding: 48px 24px;
+                overflow: hidden;
+                border-top: 2px solid#333;
+                background-color: #cfe8ff;
+                display: flex;
+                justify-content: space-between;
+                gap: 2rem;
+                margin: auto;
+                width: 100%;
+            }
+
         }
     </style>
 </head>
@@ -158,11 +203,14 @@
         </div> -->
             <ul class="links">
                 <li class="link_li">
-                    <a href="./首页.html" class="link">返回首页</a>
+                    <a href="./index.html" class="link">返回首页</a>
                 </li>
                 <li class="link_li">
                     <a href="./社团简介.html" class="link">关于社团</a>
                 </li>
+                <!-- <li class="link_li">
+                    <a href="./了解网球.html" class="link">了解网球</a>
+                </li> -->
                 <li class="link_li">
                     <a href="./留言板.html" class="link">留言板</a>
                 </li>
