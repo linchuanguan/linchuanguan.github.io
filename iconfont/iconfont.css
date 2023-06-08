@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4094564 */
+  src: url('iconfont.woff2?t=1685427463168') format('woff2'),
+       url('iconfont.woff?t=1685427463168') format('woff'),
+       url('iconfont.ttf?t=1685427463168') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangyoujiantou:before {
+  content: "\e65f";
+}
+
+.icon-xiangzuojiantou:before {
+  content: "\e660";
+}
+
+.icon-dajiantouyou:before {
+  content: "\e72a";
+}
+
+.icon-dajiantouzuo:before {
+  content: "\e72b";
+}
+
+.icon-tiyu-wangqiu:before {
+  content: "\e661";
+}
+
+.icon-wenti-wangqiu:before {
+  content: "\e609";
+}
+
+.icon-youjiantou:before {
+  content: "\e620";
+}
+
+.icon-zuojiantou:before {
+  content: "\e621";
+}
+
+.icon-wangqiu-tennis-yundong:before {
+  content: "\e61c";
+}
+
+.icon-qiupaileiyundong:before {
+  content: "\ebd9";
+}
+
+.icon-wangqiu:before {
+  content: "\e8aa";
+}
+
+.icon-a-wangqiuchangguan:before {
+  content: "\e62d";
+}
+
+.icon-wangqiu1:before {
+  content: "\e654";
+}
+
