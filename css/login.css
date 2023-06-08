@@ -46,33 +46,13 @@ ul {
 .wrapper {
   width: 1240px;
   margin: 0 auto;
+  /* background-color: #aae0ff; */
+  background-image: url(../images/网球.png);
+  background-repeat: no-repeat;
+  background-position: 10% 130%;
 }
 
-/** 主导航及Logo **/
 
-/* 
-.hpi_header .hpi_logo {
-  width: 200px;
-  height: 132px;
-  text-indent: -999px;
-  background-image: url(../images/网球.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 20px;
-} */
-
-/* .hpi_header .hpi_navs {
-  padding-left: 50px;
-} */
-
-/* .hpi_header .hpi_navs li {
-  line-height: 1;
-  font-size: 16px;
-  margin-right: 50px;
-  position: relative;
-  float: left;
-} */
 
 /* 底部区域 */
 .hpi_footer .copyright {
