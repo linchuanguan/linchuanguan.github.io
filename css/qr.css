@@ -216,3 +216,354 @@
         font-size: 4-rem;
     }
 }
+
+
+
+
+
+
+/* below 540px */
+
+@media(max-width:33em) {
+
+    html {
+        font-size: 33%;
+    }
+
+    .wrapper {
+        margin: auto;
+        width: 33rem;
+    }
+
+    .wrapper2 {
+        margin: auto;
+        width: 33rem;
+    }
+
+    .nav {
+        height: 8rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .left {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        background-image: url(../images/网球.png);
+        /* background-size: contain; */
+        background-position: -10rem -10rem;
+        margin-left: -12rem;
+        /* background-color: orangered; */
+    }
+
+    .right {
+        width: 32rem;
+        height: 18rem;
+        margin-right: -12rem;
+        margin-top: 8rem;
+    }
+
+
+    .right img {
+        width: 30rem;
+    }
+
+    .left {
+        background-image: url(../images/网球.png);
+        background-position: -3rem -3rem;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        line-height: 1.35;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .section--sign-up {
+        padding: 4rem 3rem;
+    }
+
+    .nav .logo i {
+        font-size: 4rem;
+        margin-left: -1rem;
+        flex: .3;
+    }
+
+    .nav .links {
+        flex: .3;
+        margin-left: -1rem;
+    }
+
+    .link_li {
+        margin-left: 2rem;
+        background-color: rgb(251, 89, 89);
+        box-shadow: 5px 5px 0 #333;
+        width: 7rem;
+        height: 3.5rem;
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .link {
+        font-size: .1rem;
+        line-height: 3.5rem;
+    }
+
+    a {
+        line-height: 3.5rem;
+    }
+
+
+    .header_title {
+        padding-top: 16rem;
+        padding-bottom: 12rem;
+        max-width: 60rem;
+    }
+
+    .header_img {
+        width: 30%;
+        transform: translateY(-6rem);
+        transform: translateX(90%);
+    }
+
+    .button {
+        line-height: 1rem;
+        border: 2px solid;
+        border-radius: 6px;
+        padding: 12px 20px;
+        transition: all 0.3s;
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
+
+
+    .highlight::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        transform: scale(1.07, 1.05) skewX(-15deg);
+        background-image: var(--gradient-primary);
+    }
+
+
+    .section_title {
+        margin: 6rem;
+    }
+
+
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .pic {
+        position: relative;
+        width: 28rem;
+        height: 15rem;
+        overflow: hidden;
+    }
+
+    .features__img {
+        width: 28rem;
+        background-size: cover;
+    }
+
+    .features__feature {
+        font-size: 1.5rem;
+        width: 25rem;
+    }
+
+    h3 {
+        font-size: 4-rem;
+    }
+}
+
+
+
+
+
+/* below 410px */
+
+@media(max-width:26em) {
+
+    html {
+        font-size: 25%;
+    }
+
+    .wrapper {
+        margin: auto;
+        width: 50rem;
+    }
+
+    .wrapper2 {
+        margin: auto;
+        width: 80rem;
+    }
+
+    .nav {
+        height: 10rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .left {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        background-image: url(../images/网球.png);
+        /* background-size: contain; */
+        background-position: -10rem -10rem;
+        margin-left: -12rem;
+        /* background-color: orangered; */
+    }
+
+    .right {
+        width: 39rem;
+        height: 22rem;
+        margin-right: -12rem;
+        margin-top: 8rem;
+    }
+
+
+    .right img {
+        width: 36rem;
+    }
+
+    .left {
+        background-image: url(../images/网球.png);
+        background-position: -3rem -6rem;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        line-height: 1.35;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .section--sign-up {
+        padding: 4rem 3rem;
+    }
+
+    .nav .logo i {
+        font-size: 4rem;
+        margin-left: -1rem;
+        flex: .3;
+    }
+
+    .nav .links {
+        flex: .9;
+    }
+
+    .link_li {
+        margin-left: 2rem;
+        width: 14rem;
+        height: 5rem;
+    }
+
+    .link {
+        /* font-size: 1px; */
+        line-height: 6rem;
+    }
+
+    a {
+        line-height: 3.5rem;
+    }
+
+
+    .header_title {
+        padding-top: 16rem;
+        padding-bottom: 12rem;
+        max-width: 60rem;
+    }
+
+    .header_img {
+        width: 30%;
+        transform: translateY(-6rem);
+        transform: translateX(90%);
+    }
+
+    .button {
+        line-height: 1rem;
+        border: 2px solid;
+        border-radius: 6px;
+        padding: 2rem;
+        transition: all 0.3s;
+        margin-left: 9rem;
+        margin-top: 9rem;
+        width: 30rem;
+        height: 6rem;
+        font-size: .3rem;
+    }
+
+
+    .highlight::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        transform: scale(1.07, 1.05) skewX(-15deg);
+        background-image: var(--gradient-primary);
+    }
+
+
+    .section_title {
+        margin: 6rem;
+    }
+
+
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .pic {
+        position: relative;
+        width: 40rem;
+        height: 20rem;
+        overflow: hidden;
+    }
+
+    .features__img {
+        width: 40rem;
+        background-size: cover;
+    }
+
+    .features__feature {
+        font-size: 1.5rem;
+        width: 30rem;
+    }
+
+    h3 {
+        font-size: 4-rem;
+    }
+}
